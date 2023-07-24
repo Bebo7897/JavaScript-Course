@@ -1,17 +1,17 @@
-var X = 25;
-function addThem() {
+var X = 25;             //assign global variable
+function addThem() {    //function that adds global and local variable and displays value to console
     var Y = 75;
     console.log(X + Y);
 }
 
-function addWrong() {
-    console.log(X + Y);
+function addWrong() {   //function that tries to add same variables but doesn't contain local variable 
+    console.log(X + Y); //so instead displays an error in console
 }
 
-addThem();
+addThem();              //calls functions 
 addWrong();
 
-function checkDate() {
+function checkDate() {      //function compares the local time to the values and displays appropriate text
     if (new Date().getHours() < 17 && new Date().getHours() > 8) {
         document.getElementById("Date").innerHTML = "We are still in the office!";
     }
@@ -20,7 +20,7 @@ function checkDate() {
     }
 }
 
-function checkAge() {
+function checkAge() {       //function takes age from element id age and compares it to value and displays text accordingly
     var Age = document.getElementById("Age").value;
     if (Age > 17) {
         document.getElementById("Voter").innerHTML = "You are old enough to vote!";
@@ -30,7 +30,7 @@ function checkAge() {
     }
 }
 
-function Time_function() {
+function Time_function() {     //stores time from local machine as time then makes following comparisons to display appropriately
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
