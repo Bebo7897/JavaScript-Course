@@ -83,7 +83,7 @@ function checkWinConditions() {
     // 0,3,6
     else if (arrayIncludes('0X', '3X', '6X')) {drawWinLine(100,50,100,558)}
     //1,4,7
-    else if (arrayIncludes('3X', '4X', '5X')) {drawWinLine(304,50,304,558)}
+    else if (arrayIncludes('1X', '4X', '7X')) {drawWinLine(304,50,304,558)}
     //2,5,8
     else if (arrayIncludes('2X', '5X', '8X')) {drawWinLine(508,50,508,558)}
     //6,4,2
@@ -92,7 +92,7 @@ function checkWinConditions() {
     else if (arrayIncludes('0X', '4X', '8X')) {drawWinLine(100,100,520,520)}
     // O conditions
     // O 0,1,2 condition
-    if (arrayIncludes('0O', '1O', '2O')) {drawWinLine(50,100,558,100)}
+    else if (arrayIncludes('0O', '1O', '2O')) {drawWinLine(50,100,558,100)}
     // 3, 4, 5
     else if (arrayIncludes('3O', '4O', '5O')) {drawWinLine(50,304,558,304)}
     // 6,7,8
@@ -100,7 +100,7 @@ function checkWinConditions() {
     // 0,3,6
     else if (arrayIncludes('0O', '3O', '6O')) {drawWinLine(100,50,100,558)}
     //1,4,7
-    else if (arrayIncludes('3O', '4O', '5O')) {drawWinLine(304,50,304,558)}
+    else if (arrayIncludes('1O', '4O', '7O')) {drawWinLine(304,50,304,558)}
     //2,5,8
     else if (arrayIncludes('2O', '5O', '8O')) {drawWinLine(508,50,508,558)}
     //6,4,2
@@ -192,6 +192,13 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             //condition is similar to the one above
             //This is necessary for the 6,4,2 win conditions
             if(x >= x2 && y >= y2) {cancelAnimationFrame(animationLoop);}
+        }
+        //This condition is similar to the one above
+        //This is necessary for the 6,4,2 win condition
+        if (x1 <= x2 && y1 >= y2) {
+            if (x < x2) {x += 10;}
+            if (y > y2) {y -= 10;}
+            if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}
         }
     }
 
