@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <script>
+        $(document).ready(function() {  //function retrieves html tag and appends data in quotation
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#1").on("click", function() {  //function on click displays alert and then hides content with slideUp
+                alert("Oh no! You clicked paragraph 1! Now it will disappear!");
+                $(this).slideUp(800);
+            });
+            $("#2").css({"color":"red"});  //changes color of paragraph 2 to red
+            $("#3").click(function() {  //function hides h1 when clicked
+                $("h1").hide();
+            });
+
+        });
+    </script>
+</html>
