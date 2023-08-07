@@ -8,7 +8,7 @@ During this course, I made numerous websites to practice the skills I learned.  
 
 *[Pizza Restaurant Menu](Pizza_Project/Pizza.html)  
 
-*[Arcane Academy](Basic_HTML_and_CSS/Website_Project/index.html)  
+*[TicTacToe](TicTacToe/TicTacToe.html)  
 
 *[Academy Cinemas](Basic_HTML_and_CSS/bootstrap4_project/academy_cinemas.html)  
 
