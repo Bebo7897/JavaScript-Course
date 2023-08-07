@@ -6,7 +6,7 @@ During this course, I made numerous websites to practice the skills I learned.  
 
 *[Simple Calculator](Calculator/calculator.html)  
 
-*[Muscle Car Mission](Basic_HTML_and_CSS/One-Page_Website/one_page_website.html)  
+*[Pizza Restaurant Menu](Pizza_Project/Pizza.html)  
 
 *[Arcane Academy](Basic_HTML_and_CSS/Website_Project/index.html)  
 
