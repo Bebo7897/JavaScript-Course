@@ -4,7 +4,7 @@ This repository is for my Tech Academy projects using JavaScript.  It will conta
 ## Projects
 During this course, I made numerous websites to practice the skills I learned.  Below is the code for a few of the larger ones:  
 
-*[Apex Balance](Assignment.html)  
+*[Simple Calculator](Calculator/calculator.html)  
 
 *[Muscle Car Mission](Basic_HTML_and_CSS/One-Page_Website/one_page_website.html)  
 
